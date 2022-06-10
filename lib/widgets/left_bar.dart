@@ -2,10 +2,10 @@
 
 import 'package:bmi_calci/constants/app_constants.dart';
 import 'package:flutter/material.dart';
- class LeftBar extends StatelessWidget {
-   final double barWidth;
- 
- 
+
+class LeftBar extends StatelessWidget {
+  final double barWidth;
+
   const LeftBar({Key? key, required this.barWidth}) : super(key: key);
 
   @override
@@ -17,13 +17,11 @@ import 'package:flutter/material.dart';
           height: 25,
           width: barWidth,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(20),
-              bottomLeft: Radius.circular(20)
-            ),
-            color: accentHexColor),
-          ),
-        
+              borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(20),
+                  bottomLeft: Radius.circular(20)),
+              color: Colors.blue),
+        ),
       ],
     );
   }
